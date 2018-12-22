@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="edu.coursera.distributed.MpiJavaTest" time="35.324" tests="5" errors="0" skipped="0" failures="5">
+  <properties>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="java.vm.version" value="10.0.2+13-Ubuntu-1ubuntu0.18.04.3"/>
+    <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/karan/Documents/miniproject_3"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=":"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="/home/karan/Documents/miniproject_3"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="10.0.2+13-Ubuntu-1ubuntu0.18.04.3"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="/tmp"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="os.name" value="Linux"/>
+    <property name="classworlds.conf" value="/usr/share/maven/bin/m2.conf"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/usr/java/packages/lib:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib"/>
+    <property name="maven.conf" value="/usr/share/maven/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="54.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="4.15.0-39-generic"/>
+    <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
+    <property name="user.home" value="/home/karan"/>
+    <property name="user.timezone" value="Asia/Kolkata"/>
+    <property name="java.awt.printerjob" value="sun.print.PSPrinterJob"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.specification.version" value="10"/>
+    <property name="user.name" value="karan"/>
+    <property name="java.class.path" value="/usr/share/maven/boot/plexus-classworlds-2.x.jar"/>
+    <property name="java.vm.specification.version" value="10"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher test"/>
+    <property name="java.home" value="/usr/lib/jvm/java-11-openjdk-amd64"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="10.0.2"/>
+    <property name="securerandom.source" value="file:/dev/./urandom"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="/usr/share/maven"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.version.date" value="2018-07-17"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.desktop" value="gnome"/>
+    <property name="sun.cpu.isalist" value=""/>
+  </properties>
+  <testcase name="testMatrixMultiplyRectangular1Small" classname="edu.coursera.distributed.MpiJavaTest" time="3.76">
+    <failure message="Expected a speedup of at least 3.0, but saw 0.9403489026449071" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expected a speedup of at least 3.0, but saw 0.9403489026449071
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.TestCase.assertTrue(TestCase.java:192)
+	at edu.coursera.distributed.MpiJavaTest.testDriver(MpiJavaTest.java:135)
+	at edu.coursera.distributed.MpiJavaTest.testMatrixMultiplyRectangular1Small(MpiJavaTest.java:148)
+</failure>
+    <system-err><![CDATA[Testing matrix multiply: [800 x 1600] * [1600 x 500] = [800 x 500]
+Sequential implementation ran in 1671 ms
+MPI implementation ran in 1777 ms, yielding a speedup of 0.9403489026449071x
+
+]]></system-err>
+  </testcase>
+  <testcase name="testMatrixMultiplyRectangular2Small" classname="edu.coursera.distributed.MpiJavaTest" time="3.171">
+    <failure message="Expected a speedup of at least 3.0, but saw 0.9649749821300929" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expected a speedup of at least 3.0, but saw 0.9649749821300929
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.TestCase.assertTrue(TestCase.java:192)
+	at edu.coursera.distributed.MpiJavaTest.testDriver(MpiJavaTest.java:135)
+	at edu.coursera.distributed.MpiJavaTest.testMatrixMultiplyRectangular2Small(MpiJavaTest.java:152)
+</failure>
+    <system-err><![CDATA[Testing matrix multiply: [1600 x 800] * [800 x 500] = [1600 x 500]
+Sequential implementation ran in 1350 ms
+MPI implementation ran in 1399 ms, yielding a speedup of 0.9649749821300929x
+
+]]></system-err>
+  </testcase>
+  <testcase name="testMatrixMultiplyRectangularLarge" classname="edu.coursera.distributed.MpiJavaTest" time="14.462">
+    <failure message="Expected a speedup of at least 3.0, but saw 1.0005813953488372" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expected a speedup of at least 3.0, but saw 1.0005813953488372
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.TestCase.assertTrue(TestCase.java:192)
+	at edu.coursera.distributed.MpiJavaTest.testDriver(MpiJavaTest.java:135)
+	at edu.coursera.distributed.MpiJavaTest.testMatrixMultiplyRectangularLarge(MpiJavaTest.java:156)
+</failure>
+    <system-err><![CDATA[Testing matrix multiply: [1800 x 1400] * [1400 x 1000] = [1800 x 1000]
+Sequential implementation ran in 6884 ms
+MPI implementation ran in 6880 ms, yielding a speedup of 1.0005813953488372x
+
+]]></system-err>
+  </testcase>
+  <testcase name="testMatrixMultiplySquareLarge" classname="edu.coursera.distributed.MpiJavaTest" time="10.719">
+    <failure message="Expected a speedup of at least 3.0, but saw 0.9414218009478673" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expected a speedup of at least 3.0, but saw 0.9414218009478673
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.TestCase.assertTrue(TestCase.java:192)
+	at edu.coursera.distributed.MpiJavaTest.testDriver(MpiJavaTest.java:135)
+	at edu.coursera.distributed.MpiJavaTest.testMatrixMultiplySquareLarge(MpiJavaTest.java:144)
+</failure>
+    <system-err><![CDATA[Testing matrix multiply: [1200 x 1200] * [1200 x 1200] = [1200 x 1200]
+Sequential implementation ran in 4966 ms
+MPI implementation ran in 5275 ms, yielding a speedup of 0.9414218009478673x
+
+]]></system-err>
+  </testcase>
+  <testcase name="testMatrixMultiplySquareSmall" classname="edu.coursera.distributed.MpiJavaTest" time="3.212">
+    <failure message="Expected a speedup of at least 3.0, but saw 0.9704336399474376" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: Expected a speedup of at least 3.0, but saw 0.9704336399474376
+	at junit.framework.Assert.fail(Assert.java:57)
+	at junit.framework.Assert.assertTrue(Assert.java:22)
+	at junit.framework.TestCase.assertTrue(TestCase.java:192)
+	at edu.coursera.distributed.MpiJavaTest.testDriver(MpiJavaTest.java:135)
+	at edu.coursera.distributed.MpiJavaTest.testMatrixMultiplySquareSmall(MpiJavaTest.java:140)
+</failure>
+    <system-err><![CDATA[Testing matrix multiply: [800 x 800] * [800 x 800] = [800 x 800]
+Sequential implementation ran in 1477 ms
+MPI implementation ran in 1522 ms, yielding a speedup of 0.9704336399474376x
+
+]]></system-err>
+  </testcase>
+</testsuite>
